@@ -13,13 +13,16 @@
 <pre>
 이메일/비밀번호, google 가입 가능 설정
 데이터 베이스 읽기 쓰기 권한을 수정 한다.
-<code>{  "rules": { ".read": true, ".write": true }}</code>
+
+{"rules": { ".read": true, ".write": true }}
 </pre>
 
 ###3) hosting 
 <pre>
 firebase console 도구 설치
-<code> npm install -g firebase-tools </code>
+
+$ npm install -g firebase-tools
+
 터미널 에서 firebase login 으로 로그인
 firebase init 로 기본 설정 (프로젝트 폴더, db, hosting 사용 여부)
 추가 서버 없이 파일을 실행하여도 테스트가 가능
@@ -27,7 +30,9 @@ firebase init 로 기본 설정 (프로젝트 폴더, db, hosting 사용 여부)
 </pre>
 
 ###4) firebase 적용
+<pre>
 프로젝트 페이지 > overview > 웹 앱에 firebase 추가하기 > 스니펫 획득
+<code>
     <script>
       var config = {
         apiKey: "your key",
@@ -37,12 +42,16 @@ firebase init 로 기본 설정 (프로젝트 폴더, db, hosting 사용 여부)
         messagingSenderId: "0000000"
       };
     </script>
+    </code>
 	형태이며 js/init.js 에 삽입
+</pre>
 
 ###5) 배포
+<pre>
 firebase use --add 로 프로젝트 추가(원하는 이름을 입력하여 저장 가능)
 firebase use *name* 으로 프로젝트 선택이 가능
 firebase init 에서 설정한 경로에 파일을 넣고 firebase deploy 명령을 사용
+</pre>
 
 
 
@@ -51,6 +60,7 @@ firebase init 에서 설정한 경로에 파일을 넣고 firebase deploy 명령
 
 
 ###6) 시작하기
+<pre>
 시스템관리자 계정 - 권한 (2)
     	 cms 를 업로드 한 후 처음 접속하면 systemmanager 계정을 
    	  자동으로 생성한다 id : system@manager.com / pw : 123456 을 
@@ -71,9 +81,12 @@ firebase init 에서 설정한 경로에 파일을 넣고 firebase deploy 명령
    	  id는 e메일 형식을 맞춰야 하며, pw는 6자 이상만 가능하다.
    	  비밀번호 변경등의 기능은 firebase의 비밀 번호 변경 기능을 이용해 제작해야 한다.
     	 그외 정보들은 database 에 uid 를 기준으로 저장된다.
+</pre>
 
 ###7) 파일 업로드
+<pre>
 firebase 의 db 상에는 파일의 이름만 올라가고 파일 자체는 awsS3 에 올라간다.
 js/init.js 파일에 입력한다.
 AWS.config.update() > accessKeyId, secretAccessKey 
    	new AWS.S3() > bucket 이름,  region 을 설정해 줘야 한다.
+</pre>

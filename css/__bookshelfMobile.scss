@@ -1,0 +1,294 @@
+
+$introBG: #fafafa;
+
+@media screen and (max-width: 375px) {
+
+  $companyImgWidth: 70px;
+  $companyImgHeight: 70px;
+  $companyImgMargin: 2px;
+
+  $notimgPaddingTop: 65px;
+  $itemTitleMarginTop : 5px;
+
+  $logoWidth: 72px;
+  $logoHeight: 72px;
+
+  $sideListHeight: 75px;
+
+  $introHeight: 72px;
+  $introWidth: calc(100% - 80px);
+  $introMargin: 2px;
+  $introPadding: 2px;
+
+  $contentsHeight: calc(100% - 75px);
+
+  $listTitle: 20px;
+
+  $titleHeaderHeight: 25px;
+  $titleHeaderFontSize: 15px;
+  $titleHeaderIndent: 5px;
+  $titleHeaderBorderBottom: 1px solid #c3c3c3;
+
+  $listPadding: 5px;
+  $listHeight: 350px;
+  $imgdocHeight: 160px;
+  $imgdocMarginTop: 10px;
+
+
+  $bottomContentsCategoryHeight: calc(100% - 20px);
+
+  $categoryItemHeaderHeight: 40px;
+  $categoryItemHeaderFontSize: 17px;
+
+  $categoryItemListHeight: calc(100% - 40px);
+  $categoryItemListInnerMarginTop: 10px;
+
+  $searchInputPadding: 2px;
+  $searchInputTop: 60px;
+  $searchInputHeight: 40px;
+
+  $categoryListDivHeight: 70px;
+  $categoryListDivMarginTop: 10px;
+  $categoryListDivBorder: 1px solid black;
+
+  $contentSideInnerImgMarginBottom: 10px;
+  $contentSideInnerTableBorder: 1px solid gray;
+  $contentSideInnerTableTdIndent: 3px;
+
+  $itemTitleFontsize: 18px;
+  $itemTitlePadding: 2px;
+
+  $itemSubtitleFontsize: 12px;
+  $itemWriterFontsize: 13px;
+
+  $contentsExplanationPadding: 3px;
+  $contentsExplanationRadius: 5px;
+  $contentsExplanationBorder: 1px solid gray;
+  $contentsExplanationHeight: 100px;
+
+
+
+  .selectBtn{
+    color: black;
+  }
+  #explorer{
+    display: none;
+  }
+
+  #companyImg{
+    width: $companyImgWidth;
+    height: $companyImgHeight;
+    margin: $companyImgMargin;
+  }
+#logo{
+  width: $logoWidth;
+  height: $logoHeight;
+    float: left;
+}
+  #sideList {
+    width: 100%;
+    height: $sideListHeight;
+  }
+  #intro {
+    float: left;
+    overflow: auto;
+    resize: none;
+    height: $introHeight;
+    width: $introWidth;
+    margin: $introMargin;
+    padding: $introPadding;
+    border: $divBorder;
+    background-color: $introBG;
+  }
+  #info{
+    display: none;
+  }
+  #contents{
+    width: 100%;
+    height: $contentsHeight;
+    background-color: $bodyBackGround;
+  }
+  .listTitle{
+    width: 100%;
+    height: $listTitle;
+  }
+  .titleHeader{
+    height: $titleHeaderHeight;
+    font-size: $titleHeaderFontSize;
+    font-weight: bold;
+    text-indent: $titleHeaderIndent;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: $titleHeaderBorderBottom;
+  }
+  .list {
+    width: 100%;
+    padding: $listPadding;
+    height: $listHeight;
+    // height: calc(50% - 20px);
+  }
+  .img,
+  .doc{
+    width: 35%;
+    height: $imgdocHeight;
+    // width: 90px;
+    // height: 120px;
+    border: $divBorder;
+    cursor: pointer;
+    float: left;
+    background-color: white;
+    margin-top: $imgdocMarginTop;
+    margin-left: 10%;
+    // margin: 5px 10% 3px 10%;
+    // margin: 5px 3% 3px 15%;
+  }
+  .notingImg{
+    padding-top: $notimgPaddingTop;
+    text-align: center;
+    // text-indent: $notingImgIndent;
+  }
+#wrap,body,html{
+  height: 100%;
+}
+  // category page
+  #bottomContentsCategory{
+    display: none;
+    // height: 100%;
+    height: $bottomContentsCategoryHeight;
+  }
+
+
+#categoryItem,
+#categoryForm{
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: $divBorder;
+  background-color: #CFD8DC;
+}
+#categoryItemHeader{
+  width: 100%;
+  height: $categoryItemHeaderHeight;
+  line-height: $categoryItemHeaderHeight;
+  text-align: center;
+  font-size: $categoryItemHeaderFontSize;
+  font-weight: bold;
+  background-color: #BDBDBD;
+}
+#categoryItemList{
+  overflow: auto;
+  width: 100%;
+  height: $categoryItemListHeight;
+  background-color: lightgray;
+  > div > div,
+  > div >img {
+    margin-top: $categoryItemListInnerMarginTop;
+  }
+}
+#searchInput{
+  display: none;
+  position: fixed;
+  padding: $searchInputPadding;
+  top: $searchInputTop;
+  width: 100%;
+  height: $searchInputHeight;
+  background-color: $topBarBackGround;
+  >input[type="text"]{
+    width: 85%;
+    height: 100%;
+    float: left;
+  }
+  >input[type="button"]{
+    width: 15%;
+    height: 100%;
+    float: left;
+  }
+}
+
+#previous{
+  display: none;
+}
+
+#categoryList{
+  width: 100%;
+  height: 100%;
+  > div {
+    float: left;
+    width: 35%;
+    // width: 120px;
+    height: $categoryListDivHeight;
+    line-height: $categoryListDivHeight;
+    text-align: center;
+    margin-top: $categoryListDivMarginTop;
+    margin-left: 10%;
+    // margin: 5px 10% 5px 10%;
+    // margin: 10px 6% 10px 6%;
+    background-color: white;
+    border: $categoryListDivBorder;
+  }
+}
+
+#showItemInfo{
+  width: 100%;
+  height: 100%;
+  >#contentSide{
+    width: 45%;
+    height: 100%;
+    float: left;
+    > div{
+      width: 100%;
+      float: left;
+      >div,
+      >img{
+        width: 80%;
+        margin-bottom: $contentSideInnerImgMarginBottom;
+      }
+      >table {
+        border: $contentSideInnerTableBorder;
+        margin: 0 auto;
+        td{
+          text-indent: $contentSideInnerTableTdIndent;
+          border: $contentSideInnerTableBorder;
+          background-color: #fafafa;
+        }
+      }
+    }
+  }
+  >#contentMain{
+    width: 55%;
+    height: 100%;
+    float: left;
+    >div{
+      width: 100%;
+
+      #item_title{
+        font-size: $itemTitleFontsize;
+        font-weight: bold;
+        margin-top: $itemTitleMarginTop;
+        padding: $itemTitlePadding;
+      }
+      #item_subtitle{
+        font-size: $itemSubtitleFontsize;
+      }
+      #item_writer{
+        font-size: $itemWriterFontsize;
+      }
+    }
+    #contents_intro,
+    #contents_Explanation{
+      background-color: white;
+      padding: $contentsExplanationPadding;
+      width: 95%;
+      border-radius: $contentsExplanationRadius;
+      border: $contentsExplanationBorder;
+      height: $contentsExplanationHeight;
+      overflow: auto;
+    }
+
+  }
+}
+
+
+
+
+}

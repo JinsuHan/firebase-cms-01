@@ -1,0 +1,300 @@
+@media screen and (max-width: 375px) {
+  .selectBtn {
+    color: black; }
+
+  #explorer {
+    display: none; }
+
+  #companyImg {
+    width: 70px;
+    height: 70px;
+    margin: 2px; }
+
+  #logo {
+    width: 72px;
+    height: 72px;
+    float: left; }
+
+  #sideList {
+    width: 100%;
+    height: 75px; }
+
+  #intro {
+    float: left;
+    overflow: auto;
+    resize: none;
+    height: 72px;
+    width: calc(100% - 80px);
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #CFD8DC;
+    background-color: #fafafa; }
+
+  #info {
+    display: none; }
+
+  #contents {
+    width: 100%;
+    height: calc(100% - 75px);
+    background-color: #f3f3f4; }
+
+  .listTitle {
+    width: 100%;
+    height: 20px; }
+
+  .titleHeader {
+    height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 5px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #c3c3c3; }
+
+  .list {
+    width: 100%;
+    padding: 5px;
+    height: 350px; }
+
+  .img,
+  .doc {
+    width: 35%;
+    height: 160px;
+    border: 1px solid #CFD8DC;
+    cursor: pointer;
+    float: left;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10%; }
+
+  .notingImg {
+    padding-top: 65px;
+    text-align: center; }
+
+  #wrap, body, html {
+    height: 100%; }
+
+  #bottomContentsCategory {
+    display: none;
+    height: calc(100% - 20px); }
+
+  #categoryItem,
+  #categoryForm {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CFD8DC;
+    background-color: #CFD8DC; }
+
+  #categoryItemHeader {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #BDBDBD; }
+
+  #categoryItemList {
+    overflow: auto;
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: lightgray; }
+    #categoryItemList > div > div,
+    #categoryItemList > div > img {
+      margin-top: 10px; }
+
+  #searchInput {
+    display: none;
+    position: fixed;
+    padding: 2px;
+    top: 60px;
+    width: 100%;
+    height: 40px;
+    background-color: #2f4050; }
+    #searchInput > input[type="text"] {
+      width: 85%;
+      height: 100%;
+      float: left; }
+    #searchInput > input[type="button"] {
+      width: 15%;
+      height: 100%;
+      float: left; }
+
+  #previous {
+    display: none; }
+
+  #categoryList {
+    width: 100%;
+    height: 100%; }
+    #categoryList > div {
+      float: left;
+      width: 35%;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 10%;
+      background-color: white;
+      border: 1px solid black; }
+
+  #showItemInfo {
+    width: 100%;
+    height: 100%; }
+    #showItemInfo > #contentSide {
+      width: 45%;
+      height: 100%;
+      float: left; }
+      #showItemInfo > #contentSide > div {
+        width: 100%;
+        float: left; }
+        #showItemInfo > #contentSide > div > div,
+        #showItemInfo > #contentSide > div > img {
+          width: 80%;
+          margin-bottom: 10px; }
+        #showItemInfo > #contentSide > div > table {
+          border: 1px solid gray;
+          margin: 0 auto; }
+          #showItemInfo > #contentSide > div > table td {
+            text-indent: 3px;
+            border: 1px solid gray;
+            background-color: #fafafa; }
+    #showItemInfo > #contentMain {
+      width: 55%;
+      height: 100%;
+      float: left; }
+      #showItemInfo > #contentMain > div {
+        width: 100%; }
+        #showItemInfo > #contentMain > div #item_title {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 5px;
+          padding: 2px; }
+        #showItemInfo > #contentMain > div #item_subtitle {
+          font-size: 12px; }
+        #showItemInfo > #contentMain > div #item_writer {
+          font-size: 13px; }
+      #showItemInfo > #contentMain #contents_intro,
+      #showItemInfo > #contentMain #contents_Explanation {
+        background-color: white;
+        padding: 3px;
+        width: 95%;
+        border-radius: 5px;
+        border: 1px solid gray;
+        height: 100px;
+        overflow: auto; } }
+@media screen and (min-width: 375px) {
+  html, body {
+    width: 100%;
+    height: 100%; }
+
+  #bottomContentsCategory,
+  #search,
+  #searchInput,
+  #previous,
+  #select {
+    display: none; }
+
+  #contents {
+    width: 78%;
+    height: 100%;
+    float: left; }
+
+  #sideList {
+    width: 22%;
+    padding-left: 1%;
+    height: 100%;
+    float: left; }
+
+  .listTitle {
+    width: 100%;
+    height: 50px; }
+
+  .titleHeader {
+    width: 97%;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 15px;
+    border-bottom: 1px solid #c3c3c3;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 30px;
+    float: left; }
+
+  .list {
+    height: calc(50% - 50px);
+    width: 100%;
+    padding-left: 50px; } }
+@media screen and (min-width: 375px) and (max-width: 1366px) {
+  .img {
+    height: 210px;
+    width: 18%; }
+
+  .notingImg {
+    padding-top: 85px;
+    font-size: 16px; } }
+@media screen and (min-width: 375px) and (min-width: 1367px) and (max-width: 1566px) {
+  .img {
+    height: 230px;
+    width: 19%; }
+
+  .notingImg {
+    padding-top: 105px;
+    font-size: 17px; }
+
+  .firstHeader {
+    margin-top: 20px; } }
+@media screen and (min-width: 375px) and (min-width: 1567px) {
+  .img {
+    height: 250px;
+    width: 20%; }
+
+  .notingImg {
+    padding-top: 115px;
+    font-size: 18px; }
+
+  .firstHeader {
+    margin-top: 50px; } }
+@media screen and (min-width: 375px) {
+  .img, .doc {
+    margin: 15px 15px 15px 15px;
+    float: left;
+    border: 1px solid #CFD8DC;
+    cursor: pointer; }
+
+  .notingImg {
+    background-color: white;
+    text-align: center; }
+
+  .notingImg > label {
+    margin-top: 40%; }
+
+  #logo {
+    width: 95%;
+    height: 30%;
+    padding-top: 5px;
+    margin: 5px; }
+    #logo #companyImg {
+      width: 100%;
+      height: 100%; }
+
+  #intro {
+    height: 45%;
+    background-color: #dadada; }
+
+  #info {
+    height: 20%;
+    color: white;
+    font-size: 12px;
+    background-color: #9a9a9a; }
+
+  #info,
+  #intro {
+    width: 95%;
+    overflow: auto;
+    resize: none;
+    border: 0px;
+    margin: 5px;
+    padding: 10px; } }
+
+/*# sourceMappingURL=bookshelf.css.map */

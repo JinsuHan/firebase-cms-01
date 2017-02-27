@@ -1,0 +1,60 @@
+html, body{width: 100%; height: 100%; margin: 0px;}
+
+
+#sideList>li{ background-color: #1ab394;}
+.listItem{width: 100%; height: 100%; float: right; cursor: pointer;  text-indent: 10px; background-color: white; }
+.listItem:hover{width: 98%;  font-weight: bold;background-color: #fcfcfc;}
+
+#wrap{height: 100%; width: 100%;}
+#sideBar{width: 20%; height: 100%; float: left;}
+#imageList{width: 80%; height: 30%;  float: left; }
+#imageInfo{width: 80%; height: 70%; }
+#list{height: 100%;}
+
+h3{text-indent: 15px;}
+
+#sideHeader{width: 100%; }
+#sideList>li{padding: 0px; height: 60px; line-height: 60px; text-indent: 15px; cursor: pointer;}
+.list-group-item>div{width: 100%; height: 100%; }
+
+.img,
+.doc{width: 100px; height: 140px; margin: 10px; float: left; border: 1px solid #CFD8DC;}
+img{margin: 5p;}
+
+#infoWrap{width: 80%; float: left;}
+td{text-indent: 5px;border: 1px solid #CFD8DC;}
+table{border: 1px solid #CFD8DC; margin: 10px;}
+
+
+
+/**/
+
+#sideList li .current {
+  font-weight:bold;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+/* change duration value to whatever you like */
+
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}

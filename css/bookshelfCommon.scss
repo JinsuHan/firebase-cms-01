@@ -1,0 +1,124 @@
+
+@import "__common.scss";
+@import "__bookshelfCommonMobile.scss";
+
+//본문 사이즈
+$bottomContentsMinWidth: 1300px;
+$footerHeight: 25px;
+
+$btnPositiveBGcolor: #1ab394;
+$btnPositiveHoverBGcolor: #17a387;
+
+$buttonNeutralityBGcolor: #E0E0E0;
+$buttonNeutralityHoverBGcolor: #BDBDBD;
+
+$buttonDangerBGcolor: #FF1744;
+$buttonDangerHoverBGcolor: #D50000;
+
+html, body {
+  margin: $marginZero;
+}
+#company_name, #itemBar {
+  background-color: $topBarBackGround;
+  color: $fontColorWhite;
+}
+
+  #wrap {
+    height: 100%;
+    width: 100%;
+    background-color: $bodyBackGround;
+  }
+
+  .buttonPositive{
+    background-color: $btnPositiveBGcolor;
+    color: white;
+    &:hover{
+      background-color: $btnPositiveHoverBGcolor;
+      color: white;
+    }
+  }
+  .buttonDanger{
+    background-color: $buttonDangerBGcolor;
+    color: white;
+    &:hover{
+      background-color: $buttonDangerHoverBGcolor;
+      color: white;
+    }
+  }
+  .buttonNeutrality{
+    background-color: $buttonNeutralityBGcolor;
+    color: black;
+    &:hover{
+      background-color: $buttonNeutralityHoverBGcolor;
+      color: black;
+    }
+  }
+
+@media screen and (min-width: 376px){
+
+
+  #imageList {
+    width: 75%;
+    height: 100%;
+    float: left;
+  }
+
+  #sideHeader {
+    width: 25%;
+    height: $topBarHeight;
+    float: left;
+  }
+
+  #company_name {
+    text-indent: $textIndent;
+    line-height: $topBarHeight;
+    width: 100%;
+    height: $topBarHeight;
+    font-size: $titleFontSize;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+  #prevBtn,
+  #explorer {
+    width: $topBarButtonWidth;
+    height: $topBarButtonHeight;
+    background-color: $topBarButtonColor;
+    cursor: pointer;
+    color: $fontColorWhite;
+    font-weight: bold;
+    line-height: $topBarButtonHeight;
+    text-indent: $textIndent;
+    float: right;
+    margin-left: $btnMarginLeft;
+  }
+
+  #itemBar {
+    width: 75%;
+    height: $topBarHeight;
+    margin-left: 25%;
+    padding: $topBarPadding;
+  }
+
+
+  #bottomContents {
+    width: 70%;
+    min-width: $bottomContentsMinWidth;
+    height: $contentHeight;
+    margin: $marginZeroAuto;
+  }
+
+  #footer{
+    height: $footerHeight;
+    width: 100%;
+    background-color: $topBarBackGround;
+  }
+
+  #sideFooter {
+    text-align: center;
+    > label {
+      color: $fontColorWhite;
+    }
+  }
+}

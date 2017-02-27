@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>books</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+  <!-- datepicker -->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/tba.css"> -->
+
+  <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+  <script src="js/init.js"></script>
+
+  <script src="js/common.js"></script>
+</head>
+<body>
+
+  <div id="topMenu" >
+
+    <div class="user-container1 containerStyle">
+    <!-- <input type="button" class="returnMain btn btn-default" value="메인 페이지로"/> -->
+      <div class="page_title">
+        <div class="returnMain">홈</div>
+        <div>/</div>
+        <div>도서 관리</div>
+      </div>
+    </div>
+
+    <div class="user-container2 containerStyle">
+      <div class=" topMenuBtn btn btn-default buttonNeutrality" id="category">구 분</div>
+      <div class=" topMenuBtn btn btn-default buttonNeutrality" id="product">도 서</div>
+      <div class=" topMenuBtn btn btn-default buttonNeutrality" id="writer">작 가</div>
+    </div>
+
+    <div class="user-container3 containerStyle">
+      <div id="accountInfo">
+        <div id="user_name" ></div>
+        <button id="sign-out"  class="btn btn-default buttonNeutrality">로그아웃</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottomWrap">
+
+    <div id="sidebar" >
+      <div id="addBtnArea">
+        <input type="button"  class="newItem btn btn-default buttonPositive" />
+      </div>
+      <div id="searchArea">
+        <input type="text" class="searchList form-control"  />
+      </div>
+      <div id="sidebar_list_area"></div>
+
+    </div>
+
+
+    <div id="contents_area">
+      <div class="infoWrap" >
+        <h3 id="targetName"></h3>
+        <hr />
+
+        <div id="mng_category" class="hiddenDiv">
+          <p class="p_text-Indent">
+            <label class="label_textForm">구분명</label>
+            <input type="text" id="category-name" class="form-control company_input_state" />
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">출판사</label>
+            <input readonly id="category-company-name" class="form-control company_input_state" />
+            <input hidden id="category-company-id" />
+            <!-- <select id="category-company-id" class="form-control company_input_state"></select> -->
+          </p>
+          <input type="hidden" id="category-id" value="" />
+          <p class="p_text-Indent">
+            <input type="button" class="addCategory btn btn-default buttonPositive" value="등 록"/>
+            <input type="button" class="updateCategory btn btn-default buttonNeutrality" value="수 정"/>
+            <input type="button" class="deleteCategory btn btn-default buttonDanger" value="삭 제"/>
+          </p>
+        </div>
+
+        <div id="mng_product" class="hiddenDiv">
+          <p class="p_text-Indent">
+            <label class="label_textForm">출판사</label>
+            <input readonly id="product-company-name" class="form-control company_input_state" />
+            <input hidden id="product-company-id" />
+            <!-- <select id="product-company-id" class="form-control " ></select> -->
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">구분 명</label>
+            <select id="product-category-id" class="form-control "></select>
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">작가 명</label>
+            <select id="product-writer-id" class="form-control "></select>
+            <!-- <input type="text" id="product-writer-id" class="form-control "/> -->
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">도서 명</label>
+            <input type="text" id="product-name" class="form-control " />
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">부제</label>
+            <input type="text" id="product-subtitle" class="form-control "/>
+          </p>
+          <p class="p_text-Indent">
+            <label  class="label_textForm">대표 이미지</label >
+              <input type="file" id="product-img" />
+              <div id="product-img-view" ></div>
+              <div type="hidden" id="product-img-hidden" ></div>
+            </p>
+            <br />
+            <p class="p_text-Indent">
+              <label class="label_textForm">목차</label>
+              <textarea id="product-contents" class="form-control "></textarea>
+            </p>
+            <p class="p_text-Indent" >
+              <label class="label_textForm">출시일</label>
+              <input type="text" id="product-release" class="form-control " />
+              <!-- <input type="date" id="product-release" class="form-control " /> -->
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">고유번호</label>
+              <input type="text" id="product-unique" class="form-control " />
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">길이</label>
+              <input type="text" id="product-length" class="form-control " />
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">태그</label>
+              <input type="text" id="product-tag" class="form-control "/>
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">설명</label>
+              <input type="text" id="product-explanation" class="form-control " />
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">링크</label>
+              <input type="text" id="product-link" class="form-control " />
+            </p>
+
+            <input type="hidden" id="product-id" value="" />
+
+            <p class="p_text-Indent">
+              <button class="addProduct btn btn-default buttonPositive">등 록</button>
+              <button class="updateProduct btn btn-default buttonNeutrality" >수 정</button>
+              <button class="deleteProduct btn btn-default buttonDanger" >삭 제</button>
+            </p>
+
+          </div>
+
+          <div id="mng_writer" class="hiddenDiv">
+          <input hidden id="writer-company-id" />
+            <p class="p_text-Indent">
+              <label class="label_textForm">작가명</label>
+              <input type="text" id="writer-name" class="form-control company_input_state" />
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">소개</label>
+              <textarea id="writer-intro" class="form-control "></textarea>
+            </p>
+            <p class="p_text-Indent">
+              <label  class="label_textForm">사진</label >
+              <input type="file" id="writer-img" />
+              <div id="writer-nowImg" ></div>
+            </p>
+
+            <p class="p_text-Indent">
+              <label class="label_textForm">메일 주소</label>
+              <input type="text" id="writer-email" class="form-control company_input_state" />
+            </p>
+            <input type="hidden" id="writer-id" value="" />
+            <p class="p_text-Indent">
+              <button class="addWriter btn btn-default buttonPositive">등 록</button>
+              <button class="updateWriter btn btn-default buttonNeutrality" >수 정</button>
+              <button class="deleteWriter btn btn-default buttonDanger" >삭 제</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/books.js"></script>
+    <script src="js/onEvent.js"></script>
+    <script src="js/awsFileUpload.js"></script>
+  </body>
+  </html>

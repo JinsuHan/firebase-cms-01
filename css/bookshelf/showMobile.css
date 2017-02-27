@@ -1,0 +1,97 @@
+@media screen and (max-width: 375px) and (max-height: 670px) {
+  #loadingData {
+    width: 100%;
+    height: calc(100% - 75px);
+    position: absolute;
+    background-color: rgba(239, 242, 251, 0.5);
+    z-index: 999; }
+
+  #list {
+    height: 90%;
+    padding-left: 50px; }
+    #list > div {
+      margin-left: 25px; }
+
+  #contentSide {
+    width: 25%;
+    height: 100%;
+    float: left; }
+
+  #contents_img {
+    width: 85%;
+    height: 340px; }
+
+  .notingImg {
+    background-color: white;
+    padding-top: 55%;
+    text-align: center; }
+
+  .img, .doc {
+    width: 90%;
+    height: 90%;
+    margin: 30px;
+    border: 1px solid #CFD8DC; }
+
+  #contents_infoTable {
+    width: 100%; }
+
+  #contentMain {
+    width: 75%;
+    height: 100%;
+    margin-left: 25%;
+    padding: 30px; }
+
+  #contents_title {
+    width: 100%;
+    height: 15%; }
+
+  #item_title {
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 10px; }
+
+  #item_subtitle {
+    font-size: 15px;
+    text-indent: 10px; }
+
+  #item_writer {
+    font-size: 15px;
+    text-indent: 10px; }
+
+  #contents_Explanation {
+    width: 100%;
+    height: 30%;
+    margin-top: 20px; }
+
+  #item_contents {
+    padding: 10px;
+    height: 100%;
+    font-size: 18px;
+    text-indent: 10px;
+    border: 1px solid #CFD8DC;
+    background-color: #FAFAFA; }
+
+  #contents_footer {
+    width: 100%;
+    height: 10%;
+    margin-top: 20px; }
+    #contents_footer > p {
+      text-indent: 10px; }
+
+  table {
+    width: 76%;
+    border: 1px solid #CFD8DC;
+    margin: 30px; }
+
+  td {
+    text-indent: 10px;
+    border: 1px solid #CFD8DC;
+    background-color: #FAFAFA; }
+
+  .td01 {
+    width: 30%; }
+
+  .td02 {
+    width: 70%; } }
+
+/*# sourceMappingURL=showMobile.css.map */

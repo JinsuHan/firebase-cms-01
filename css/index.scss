@@ -1,0 +1,174 @@
+
+
+// 배경
+$bodyBackground: url("");
+
+// 상단 바
+$topBarTitleFontSize: 45px;
+$topBarHeight: 60px;
+$borderColor: 1px solid #CFD8DC;
+
+
+//상단을 뺀 나머지 본문
+$formWrapHeight: calc(100% - $topBarHeight);
+//본문 내 form
+$formWrapWidth: 400px;
+$formWrapHeight: 500px;
+$formWrapLeft: -200px;
+$formWrapTop: -200px;
+
+$loginInputHeight: 45px;
+
+$pTagMarginLeft: 30px;
+$pTagMarginBottom: 5px;
+$pTagTextIndent: 10px;
+$pTagMarginLeft2: 40px;
+$pTagItemHeight: 30px;
+$signBtnHeight: 15px;
+$signBtnMarginTop: 5px;
+$signBtnColor: #1ab394;
+$signBtnHover: #17a387;
+$signBtnFontColor: white;
+$msgHeight: 30px;
+$msgMargin: 0px;
+$msgMarginLeft: 60px;
+
+$bodyMargin: 0px;
+
+$btnPositiveBGcolor: #1ab394;
+$btnPositiveHoverBGcolor: #17a387;
+
+$buttonNeutralityBGcolor: #E0E0E0;
+$buttonNeutralityHoverBGcolor: #BDBDBD;
+
+$buttonDangerBGcolor: #FF1744;
+$buttonDangerHoverBGcolor: #D50000;
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: $bodyMargin;
+}
+
+
+  .buttonPositive{
+    background-color: $btnPositiveBGcolor;
+    color: white;
+    &:hover{
+      background-color: $btnPositiveHoverBGcolor;
+      color: white;
+    }
+  }
+  .buttonDanger{
+    background-color: $buttonDangerBGcolor;
+    color: white;
+    &:hover{
+      background-color: $buttonDangerHoverBGcolor;
+      color: white;
+    }
+  }
+  .buttonNeutrality{
+    background-color: $buttonNeutralityBGcolor;
+    color: black;
+    &:hover{
+      background-color: $buttonNeutralityHoverBGcolor;
+      color: black;
+    }
+  }
+#wrap {
+  width: 100%;
+  height: 100%;
+  background-color: $bodyBackground;
+}
+
+#topBar {
+  width: 100%;
+  height: $topBarHeight;
+  border-bottom: $borderColor;
+}
+#topBar > label{
+  height: $topBarHeight;
+  font-size: $topBarTitleFontSize;
+  line-height: $topBarHeight;
+  text-indent: $pTagTextIndent;
+}
+
+#formWrap {
+  width: 100%;
+  height: $formWrapHeight;
+}
+
+.signSize {
+  width: $formWrapWidth;
+  height: $formWrapHeight;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: $formWrapTop;
+  margin-left: $formWrapLeft;
+}
+
+h3{
+  text-align: center;
+}
+
+#signIn_form > p, #signUp_form > p, #signIn_form > h3, #signUp_form > h3 {
+  margin-bottom: $pTagMarginBottom;
+}
+
+#signIn_form > p > label, #signUp_form > p > label {
+  text-indent: $pTagTextIndent;
+  margin-bottom: $pTagMarginBottom;
+  margin-left: $pTagMarginLeft;
+}
+
+#login_id,#login_pw{
+  width: 80%;
+  height: $loginInputHeight;
+  margin-left: $pTagMarginLeft2;
+}
+#signIn_form > p > input, #signUp_form > p > input, #signIn_form > p > select, #signUp_form > p > select {
+  width: 80%;
+  height: $pTagItemHeight;
+  margin-left: $pTagMarginLeft2;
+}
+
+#user_company {
+  width: 80%;
+}
+
+
+.msg {
+  width: 72%;
+  height: $msgHeight;
+  margin: $msgMargin;
+  margin-left: $msgMarginLeft;
+  line-height: $msgHeight;
+  font-weight: bold;
+}
+
+hr {
+  width: 80%;
+}
+
+
+
+#changeSignIn, #changeSignUp {
+  font-weight: bold;
+  line-height: $signBtnHeight;
+  margin-top: $signBtnMarginTop;
+  background-color: gray;
+  color: white;
+}
+
+#signUpBtn, #loginBtn, #sign-in {
+  background-color: $signBtnColor;
+  color: $signBtnFontColor;
+  font-weight: bold;
+  line-height: $signBtnHeight;
+  margin-top: $signBtnMarginTop;
+}
+
+#signUpBtn:hover, #loginBtn:hover, #sign-in:hover {
+  background-color: $signBtnHover;
+}

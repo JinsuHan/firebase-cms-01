@@ -1,0 +1,84 @@
+html, body, #wrap {
+  width: 100%;
+  height: 100%; }
+
+.listItem {
+  width: 100%;
+  float: right;
+  cursor: pointer;
+  text-indent: 20px;
+  background-color: #FAFAFA; }
+  .listItem:hover {
+    width: 98%;
+    font-weight: bold;
+    background-color: #f9f9f9; }
+
+#bottomContents {
+  width: calc(100% - 75px);
+  height: calc(100% - 75px); }
+
+#sideMenu {
+  width: 25%;
+  height: 100%;
+  float: left; }
+
+#imageList {
+  height: calc(95% - 75px);
+  padding-top: 5%;
+  overflow: auto; }
+
+#sideTitle {
+  height: 10%;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 90px; }
+
+#sideList {
+  margin-bottom: 30px; }
+
+#list {
+  height: 100%;
+  padding-left: 50px; }
+
+.img, .doc {
+  width: 100px;
+  height: 140px;
+  margin: 10px;
+  float: left;
+  border: 1px solid #CFD8DC;
+  cursor: pointer; }
+
+.notingImg {
+  background-color: white;
+  padding-top: 45%;
+  text-align: center; }
+
+#sideList > li {
+  background-color: #1ab394;
+  padding: 0px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+  cursor: pointer; }
+
+.list-group-item > div {
+  width: 100%;
+  height: 100%; }
+
+#sideSearch {
+  width: 100%;
+  height: 30px; }
+
+#bookSearch {
+  width: 98%;
+  height: 98%;
+  margin: 1%; }
+
+/**/
+#sideList li .current {
+  font-weight: bold; }
+
+/*ISOTOPE*/
+
+/*# sourceMappingURL=explorer.css.map */

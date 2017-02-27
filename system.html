@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>system</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/tba.css"> -->
+  <!-- 로딩화면 스피너 -->
+  <script defer src="js/spin.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+  <script src="js/init.js"></script>
+
+  <script src="js/common.js"></script>
+</head>
+<body>
+
+  <div id="topMenu" >
+
+    <div class="user-container1 containerStyle">
+    <!-- <input type="button" class="returnMain btn btn-default" value="메인 페이지로"/> -->
+      <div class="page_title">
+        <div class="returnMain">홈</div>
+        <div>/</div>
+        <div>시스템 관리</div>
+      </div>
+    </div>
+
+    <div class="user-container2 containerStyle">
+      <div class=" topMenuBtn btn btn-default buttonNeutrality" id="company">출판사</div>
+    </div>
+
+    <div class="user-container3 containerStyle">
+      <div id="accountInfo">
+        <div id="user_name" ></div>
+        <button id="sign-out"  class="btn btn-default buttonNeutrality">로그아웃</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottomWrap">
+    <div id="contents_area_full">
+      <div class="infoWrap" >
+        <h3 id="targetName"></h3>
+        <hr />
+
+        <div id="mng_company" class="hiddenDiv">
+          <div class="halfDiv">
+            <p class="p_text-Indent">
+              <label class="label_textForm">대표 이미지</label>
+              <div id="company-selectImg" ></div>
+              <input type="file" id="company-img" />
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">소개</label>
+              <textarea id="company-intro" class="form-control "></textarea>
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">회사 정보</label>
+              <textarea id="company-info" class="form-control "></textarea>
+            </p>
+            <p class="p_text-Indent">
+              <label class="label_textForm">꼬릿말</label>
+              <textarea id="company-footer" class="form-control "></textarea>
+            </p>
+            <input type="hidden" id="company-id" value="" />
+            <p class="p_text-Indent">
+              <button  class="updateCompany btn btn-default buttonNeutrality" >수 정</button>
+            </p>
+          </div>
+
+          <div class="halfDiv">
+            <p class="p_text-Indent">
+              <label class="label_textForm">Best 선택</label>
+              <div id="company_booklist"></div>
+            </p>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div hidden id="loadingData" style="top:0; width:100%; height:100%; position:absolute; background-color:rgba(239, 242, 251, 0.5); z-index:999; line-height: 2000%; font-weight: bold; font-size: 40px; text-align: center;">
+    </div>
+
+
+    <script src="js/system.js"></script>
+    <script src="js/onEvent.js"></script>
+    <script src="js/awsFileUpload.js"></script>
+  </body>
+  </html>

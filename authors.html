@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>authours</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+    <script src="js/init.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/authors.js"></script>
+  </head>
+  <body>
+
+    <div id="topMenu" >
+      <div class="user-container1 containerStyle">
+        <div class="page_title">
+          <div class="returnMain">홈</div>
+          <div>/</div>
+          <div>사용자 관리</div>
+        </div>
+      </div>
+      <div class="user-container2 containerStyle">
+      </div>
+      <div class="user-container3 containerStyle">
+        <div id="accountInfo">
+          <div id="user_name" ></div>
+          <button id="sign-out"  class="btn btn-default buttonNeutrality">로그아웃</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottomWrap">
+
+      <div id="sidebar" class="divContents" >
+        <div id="sidebar_list_area_full"></div>
+      </div>
+
+      <div id="contents_area">
+        <div class="infoWrap">
+          <h3 id="targetName"></h3>
+          <hr />
+          <p class="p_text-Indent">
+            <label class="label_textForm">사원명</label>
+            <input type="text" id="user-names" class="form-control company_input_state" value="">
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">이메일</label>
+            <input type="text" id="user-email" class="form-control company_input_state" value="">
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">출판사</label>
+            <input readonly id="user-company-name"  class="form-control company_input_state" />
+            <div hidden id="user-company" ></div>
+          </p>
+          <p hidden>
+            <label>토픽 제한 : </label>
+            <input type="text" id="user-limit-topic" value="">
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">권한</label>
+            <div class="chkWrapDiv">
+              <input type="radio" id ="user-permission-2" name="user_chk" value="2">시스템 관리자
+              <input type="radio" id ="user-permission-1" name="user_chk" value="1">검수자
+              <input type="radio" id ="user-permission-0" name="user_chk" value="0">사용자
+            </div>
+          </p>
+          <p  class="user_key p_text-Indent">
+            <input type="button" class="updateUser btn btn-default buttonNeutrality" value="수 정"/>
+            <input type="button" class="deleteUser btn btn-default buttonDanger" value="삭 제"/>
+          </p>
+      </div>
+    </div>
+    </div>
+
+  </body>
+</html>

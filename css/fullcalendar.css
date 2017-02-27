@@ -1,0 +1,46 @@
+#calendar {
+  width: 55%;
+  height: 96.2%;
+  margin-top: 15px;
+  float: left; }
+
+td {
+  background-color: white; }
+
+#calTitle *, #myCalender * {
+  margin: 0px;
+  padding: 0px;
+  text-align: center; }
+
+#calTitle, #myCalender {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: Dotum, AppleGothic, sans-serif;
+  font-size: 12px; }
+
+/*.fc-view{background-color: #f3f3f4;}*/
+#calTitle {
+  margin-bottom: 5px; }
+  #calTitle button {
+    width: 26px;
+    height: 16px;
+    font-size: 9px;
+    line-height: normal; }
+  #calTitle span {
+    width: auto; }
+
+#myCalender td {
+  border: 1px solid #ccc;
+  width: 70px;
+  height: 55px;
+  font-family: Dotum, AppleGothic, sans-serif;
+  font-size: 12px; }
+#myCalender .blankLine td {
+  border-width: 0; }
+
+.cldItem {
+  text-indent: 5px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=fullcalendar.css.map */

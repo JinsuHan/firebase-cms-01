@@ -1,0 +1,77 @@
+
+// $calendarHeight: calc(100% - 50px);
+$calendarMarginTop: 15px;
+$marginZero: 0px;
+$paddingZero: 0px;
+$calendarFontSize: 12px;
+$calendarMarginBottom: 5px;
+$calendarBtnWidth: 26px;
+$calendarBtnHeight: 16px;
+$calendarBtnFontSize: 9px;
+$calendarTdBorder: 1px solid #ccc;
+$calendarTdWidth: 70px;
+$calendarTdHeight: 55px;
+$calendarTdBorderWidth: 0;
+$calendarTdBG: white;
+$calendarInnerTextIndent: 5px;
+
+#calendar {
+  width: 55%;
+  height: 96.2%;
+  margin-top: $calendarMarginTop;
+  float: left;
+}
+
+td {
+  background-color: $calendarTdBG;
+}
+
+
+#calTitle *, #myCalender * {
+  margin: $marginZero;
+  padding: $paddingZero;
+  text-align: center;
+}
+
+#calTitle, #myCalender {
+  margin: $marginZero;
+  padding: $paddingZero;
+  text-align: center;
+  font-family: Dotum, AppleGothic, sans-serif;
+  font-size: $calendarFontSize;
+}
+
+/*.fc-view{background-color: #f3f3f4;}*/
+
+
+
+#calTitle {
+  margin-bottom: $calendarMarginBottom;
+  button {
+    width: $calendarBtnWidth;
+    height: $calendarBtnHeight;
+    font-size: $calendarBtnFontSize;
+    line-height: normal;
+  }
+  span {
+    width: auto;
+  }
+}
+
+#myCalender {
+  td {
+    border: $calendarTdBorder;
+    width: $calendarTdWidth;
+    height: $calendarTdHeight;
+    font-family: Dotum, AppleGothic, sans-serif;
+    font-size: $calendarFontSize;
+  }
+  .blankLine td {
+    border-width: $calendarTdBorderWidth;
+  }
+}
+
+.cldItem {
+text-indent: $calendarInnerTextIndent;
+  cursor: pointer;
+}

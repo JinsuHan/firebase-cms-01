@@ -1,0 +1,1162 @@
+
+
+$bodyBackground: #f3f3f4;
+$borderColor: 1px solid #CFD8DC;
+
+$marginZero: 0px;
+$contentsHeight: calc(100% - 40px);
+$loadingDataBG: rgba(239, 242, 251, 0.5);
+$zindex: 999;
+
+//자주 쓰이는 border / div 등의 회색 테두리
+$pointBorder: 1px solid #CFD8DC;
+
+$addBtnAreaHeight: 50px;
+$searchAreaHeight: 35px;
+
+// 리플
+$replyFontSize: 16px;
+$replyIndent: 5px;
+$replyWriterSize: 13px;
+$replyDateSize: 10px;
+$replyAreaTop: 10px;
+$replyInputHeight: 30px;
+$replyBG: white;
+$replyHeight: 35px;
+$replyTop: 3px;
+$replyRadius: 5px;
+$replyWriterHeight: 20px;
+$replyDateHeight: 15px;
+
+//상단 메뉴
+$topMenuFontWeight: 600;
+$topMenuBG: #2f4050;
+$topMenuFontColor: white;
+$topMenuHeight: 40px;
+$topMenuBorder: 1px solid #f3f3f4;
+
+$pageTitleInnerDivFontSize: 18px;
+
+$pointColor: #1ab394;
+$pointColor2: #fcfcfc;
+$listBG: white;
+
+$btnFontColor: white;
+$whiterMainBG: white;
+
+//상단 메뉴 내부 div
+$topBarContainerIndent: 15px;
+$topBarContainerPdLeft: 10px;
+
+// 상단 메뉴 내부 아이템, 버튼
+$topMenuTopicItemRadius: 0px;
+$topMenuTopicItemTop: 3px;
+$topMenuTopicItemRight: 2px;
+
+// 주제 참여자 부분
+$topicEntryIndent: 10px;
+$topicStateHeight: 25px;
+$topicStateBorder: 1px solid #c3c3c4;
+$topicStateTop: 7px;
+
+
+//좌측 사이드바 , 리스트
+$sidebarHeight: $contentsHeight;
+$sideBtnHeight: 50px;
+$createBtnTop: 15px;
+$sideItemLeft: 15px;
+$listBottom: 0px;
+$listLiPadding: 0px;
+$listLiHeight: 55px;
+$listLiIndent: 5px;
+$listHeight: calc(100% - 65px);
+$sidebarListAreaHeight: calc(100% - 115px);
+$sidebarListArea2Height: calc(100% - 15px);
+
+// 본문
+$contentWrapLeft: 20px;
+
+//본문 표시 이미지
+$imgAreaPadding: 5px;
+$imgAreaBorder: 1px solid #d3d3d3;
+$imgAreaRadius: 5px;
+
+//우측 글 내용 본문
+$contentsTop: 15px;
+$contentsBtnTop: 15px;
+$contentsTextareaHeight: 100px;
+$contentBtnHeight: 50px;
+$contentBtnMargin: 0px;
+
+//우측 글 내용 본문의 표시 이미지
+$imgdocWidth: 90px;
+$imgdocHeight: 110px;
+$imgdocMargin: 5px;
+$imgViewHeight: 115px;
+$imgInnerViewWidth: 80px;
+$imgInnerViewHeight: 105px;
+
+$zindex: 999;
+
+//새 글 작성 폼
+$createContentsBG: rgba(189, 192, 201, 0.5);
+$createTop: 0px;
+$createFormWidth: 700px;
+$createFormHeight: 500px;
+$createFormTop: -250px;
+$createFormLeft: -350px;
+$createFormBG: #fff;
+$createFormradus: 5px;
+$createFormPMargin: 15px;
+$createFormSelectRight: 5px;
+$createFormTextAreaHeight: 100px;
+$createFormBtnLeft: 18px;
+$createFormBtnTop: 10px;
+$formItemHeight: 35px;
+
+//새글 작성, 파일 선택
+$fileReaderHeight: 130px;
+$fileReaderLeft: 10px;
+//새글 작성, 파일 미리보기
+$previewWrapWidth: 90px;
+$previewWrapHeight: 110px;
+$previewWrapMargin: 5px;
+
+$textStyleFontSize: 25px;
+$imgZindex: 1;
+
+$fileFilter: alpha(opacity = 0);
+$fileOpacity: 0;
+$fileMozOpa: 0;
+$fileZindex: 2;
+
+// 작가설정, 출판사 추가 삭제 폼
+$toolFieldBG: rgba(189, 192, 201, 0.5);
+$toolFieldZindex: 999;
+$toolFieldTop: 0px;
+
+//제품
+$productLineHeight: 40px;
+$productFontSize: 25px;
+$productleft: 5px;
+$productListHeight: calc(100% - 90px);
+
+//각 폼의 닫기 버튼
+$closeBtnHeight: 30px;
+$closeBtnRight: 10px;
+$closeBtnTop: 2px;
+$CloseBtnLineHeight: 15px;
+
+
+
+$controlWrap3Width: 400px;
+$controlWrap3Height: 500px;
+$controlWrap3Top:-250px;
+$controlWrap3Left:-200px;
+$controlWrap3BG:#fff;
+
+// 출판사 리스트
+$companyHeaderHeight: 80px;
+$companyHeaderIndent: 15px;
+$companyHeaderSize: 25px;
+$companyListHeight: calc(100% - 140px);
+$companyBtnHeight: 45px;
+
+$pTextIndent: 15px;
+$textFormlabelHeight: 30px;
+
+//닫기 버튼
+$companyCloseHeight: 80px;
+$companyCloseBtnMargin: 10px;
+
+$companyInputStateLeft: 15px;
+
+
+//도서, 제품 페이지
+$mngMarginTop: 15px;
+$mngElementRight: 20px;
+$mngElementWidth: 400px;
+
+
+$companyWrapBG:#fff;
+
+//체팅
+$chatTitleSize: 20px;
+$chatIndent: 10px;
+$chatHeight: 40px;
+$chatBtnMargin: 5px;
+$chatAreaLeft: 5px;
+$chatTextRight: 8px;
+
+$chatInputHeight: 30px;
+
+$chatUserNameFontSize: 13px;
+$chatValueMarginPadding: 2px;
+$chatContentsMaxWidth: 200px;
+$chatContentsRadius: 5px;
+$chatContentsHeight: 25px;
+$chatContentsIndent: 3px;
+$chatContentsPadding: 3px 5px 3px 5px;
+$chatDayLineMargin: 6px 0px 3px 0px;
+$chatDayLineHeight: 25px;
+$chatDayValueMinWidth: 75px;
+$chatDayInnerLineBprder:1px solid #9E9E9E;
+
+//작가 설정
+$topicManagerIndent: 15px;
+$topicManagerHeight: 50px;
+$topicManagerFontSize: 22px;
+$topicManagerRadius: 5px;
+
+$topicMemberMargin: 0px 0px 0px 10px;
+$topicManagerBtnMargin: 10px;
+
+//제품 미리보기 이미지
+$productImgWidth: 80px;
+$productImgHeight: 80px;
+$productImgLeft: 15px;
+
+
+// 채팅창 토글
+$toggleDivMinHeight: 55px;
+$toggleDivMarginBottom: 5px;
+
+// 각 리스트
+$listMarginTop: 15px;
+
+//상단 메뉴 버튼
+$topMenuBtnWidth: 120px;
+$topMenuBtnMargin: 3px 0px 0px 5px;
+
+// book topic company 본문 wrap
+$infoWrapMargin: 15px;
+$infoWrapPadding: 10px;
+$infoWrapBorderRdius: 5px;
+$infoWrapInnerPMBottom: 10px;
+$infoWrapInnerPMTop: 20px;
+$infoWrapH3Indent: 15px;
+$infoWrapMBottom: 25px;
+$infoWrapInnerBtnTop: 20px;
+
+
+// 본문 텍스트 필드 들 앞의 label
+$labelMarginRight: 5px;
+$labelWidth: 90px;
+
+//체크 박스
+$chkWrapDivHeight: 30px;
+$chkWrapMLeftFirst: 0px;
+$chkWrapMLeft: 15px;
+
+$mngTextAreaHeight: 140px;
+
+$productListBorderBottom: 0px;
+
+
+
+// 도서> 출판사 페이지 아이템
+$chkListItemHeight: 35px;
+$chkListItemBorderBottom: 1px solid #c3c3c4;
+$chkListItemInnerDivIndent: 10px;
+$chkListItemInnerInputTop: -25px;
+
+//출판사 페이지 리스트
+$companyBookListHeight: 390px;
+$companyBookListBorder: 1px solid #c3c3c4;
+$companyBookListRadius: 5px;
+
+//채팅창
+$chattingWrapMinHeight: 55px;
+$chatContentsHeight: calc(100% - 90px);
+$charInputMarginTop: 10px;
+$chatUploadPadding: 5px;
+
+
+// 출판사 추가 페이지 크기
+$companyWrapHeight: 700px;
+$companyWrapWidth: 900px;
+$companyWrapMarginTop: -350px;
+$companyWrapMarginLeft: -450px;
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: $marginZero;
+  background-color: $bodyBackground;
+}
+
+.buttonPositive{
+  background-color: #1ab394;
+  color: white;
+}
+.buttonDanger{
+  background-color: red;
+  color: white;
+}
+.buttonNeutrality{
+  background-color: gray;
+  color: white;
+}
+
+#loadingData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: $loadingDataBG;
+  z-index: $zindex;
+}
+
+.replyContents {
+  font-size: $replyFontSize;
+  text-indent: $replyIndent;
+}
+
+.replyWriter {
+  font-size: $replyWriterSize;
+  text-align: right;
+}
+
+.replyDate {
+  font-size: $replyDateSize;
+  text-align: right;
+}
+
+#topMenu {
+  font-weight: $topMenuFontWeight;
+  background-color: $topMenuBG;
+  color: $topMenuFontColor;
+  float: left;
+  width: 100%;
+  height: $topMenuHeight;
+  border-bottom: $topMenuBorder;
+}
+
+
+
+
+/*list item hover */
+
+.company_list > li,
+#sidebar_list_area > li,
+#sidebar_list_area_full > li,
+#list > li {
+  background-color: $pointColor;
+}
+
+.listItem {
+  background-color: $listBG;
+  &:hover {
+    background-color: $pointColor2;
+  }
+}
+
+#openTopicManager {
+  background-color: $pointColor;
+  color: $btnFontColor;
+  border: $pointColor;
+}
+
+#writer_main {
+  background-color: $whiterMainBG;
+}
+
+.containerStyle {
+  height: 100%;
+  float: left;
+  line-height: $topMenuHeight;
+}
+
+.user-container1 {
+  width: 18%;
+  text-indent: $topBarContainerIndent;
+}
+
+.user-container2 {
+  width: 55%;
+  float: left;
+}
+
+.user-container3 {
+  width: 27%;
+  float: left;
+  padding-left: $topBarContainerPdLeft;
+}
+
+#topMenu-topic {
+  width: 100%;
+  height: 100%;
+  float: left;
+  > {
+    select {
+      height: 85%;
+      width: 27.5%;
+      float: left;
+      border-radius: $topMenuTopicItemRadius;
+      margin-top: $topMenuTopicItemTop;
+    }
+    button {
+      height: 85%;
+      width: 15%;
+      float: right;
+      border-radius: $topMenuTopicItemRadius;
+      margin-top: $topMenuTopicItemTop;
+      font-weight: bold;
+    }
+  }
+}
+
+.user-container3 > button {
+  height: 85%;
+  float: left;
+  border-radius: $topMenuTopicItemRadius;
+  margin-top: $topMenuTopicItemTop;
+  margin-right: $topMenuTopicItemRight;
+  font-weight: bold;
+}
+
+.page_title{
+  >div{
+    font-size: $pageTitleInnerDivFontSize;
+    float: left;
+  }
+}
+.returnMain{
+  cursor: pointer;
+}
+
+#sign-out {
+  float: right;
+}
+
+#topic-entry {
+  height: 100%;
+  width: 47.5%;
+  float: left;
+  line-height: $topMenuHeight;
+  text-indent: $topicEntryIndent;
+}
+
+#topic-state {
+  height: 70%;
+  width: 10%;
+  float: left;
+  line-height: $topicStateHeight;
+  text-align: center;
+  border-right: $topicStateBorder;
+  margin-top: $topicStateTop;
+}
+
+#bottomWrap{
+  width: 100%;
+  height: $contentsHeight;
+}
+
+#mainContents {
+  width: 27%;
+  height: 100%;
+  float: left;
+}
+
+#contentWrap {
+  height: 95%;
+  margin-left: $contentWrapLeft;
+  width: 93%;
+}
+
+#imgView, #contents, .reply-area, #chattingWrap {
+  padding: $imgAreaPadding;
+  border: $imgAreaBorder;
+  border-radius: $imgAreaRadius;
+  background-color: $pointColor2;
+}
+
+#contents {
+  margin-top: $contentsTop;
+}
+
+#contentWrap {
+  .doc {
+    width: $imgdocWidth;
+    height: $imgdocHeight;
+    float: left;
+    text-align: center;
+    border: $pointBorder;
+    line-height: $imgdocHeight;
+    margin: $imgdocMargin;
+  }
+  > div > p > {
+    button {
+      margin-top: $contentsBtnTop;
+      width: 49.5%;
+    }
+    textarea {
+      height: $contentsTextareaHeight;
+      resize: none;
+    }
+  }
+}
+
+#imgView {
+  height: $imgViewHeight;
+  > a > img {
+    width: $imgInnerViewWidth;
+    height: $imgInnerViewHeight;
+    float: left;
+    border: $pointBorder;
+    margin-right: $imgdocMargin;
+  }
+}
+
+.reply-area {
+  width: 100%;
+  margin-top: $replyAreaTop;
+}
+
+#reply-view {
+  width: 100%;
+  overflow: auto;
+}
+
+.input-reply {
+  width: 77%;
+  height: $replyInputHeight;
+  float: left;
+}
+
+.insert-reply {
+  width: 23%;
+  height: $replyInputHeight;
+  float: left;
+}
+
+#reply-view > div {
+  height: $replyHeight;
+  margin-top: $replyTop;
+  border: $topMenuBorder;
+  background-color: $replyBG;
+  border-radius: $replyRadius;
+  border: $topicStateBorder;
+}
+
+.replyContents {
+  width: 73%;
+  height: $replyHeight;
+  float: left;
+}
+
+.replyWriter {
+  width: 25%;
+  height: $replyWriterHeight;
+  float: left;
+}
+
+.replyDate {
+  width: 25%;
+  height: $replyDateHeight;
+  float: left;
+}
+
+#sidebar {
+  width: 18%;
+  height: 100%;
+  float: left;
+}
+
+
+.sidebarDiv01, .sidebarDiv02{
+  width: 100%;
+  height: 50%;
+  float: left;
+
+}
+
+.toggleDiv01{
+  height: 5%;
+  min-height: $toggleDivMinHeight;
+  margin-bottom: $toggleDivMarginBottom;
+}
+.toggleDiv02{
+  height: 90%;
+}
+
+.company_addBtn,
+#sideBtn {
+  height: $sideBtnHeight;
+}
+
+.newItem,
+#addTopic,
+.create {
+  margin-top: $createBtnTop;
+  width: 90%;
+  margin-left: $sideItemLeft;
+}
+
+
+.company_list {
+  height: 95%;
+}
+
+#list{
+  height: $listHeight;
+}
+
+
+#sidebar_list_area{
+  height: $sidebarListAreaHeight;
+}
+
+#sidebar_list_area_full{
+  height: $sidebarListArea2Height;
+}
+
+#sidebar_list_area_full,
+#sidebar_list_area,
+.company_list,
+#list {
+  overflow: auto;
+  margin-top: $listMarginTop;
+  margin-left: $sideItemLeft;
+  margin-bottom: $listBottom;
+  > li {
+    padding: $listLiPadding;
+    list-style-type: none;
+    height: $listLiHeight;
+    width: 94%;
+    line-height: $listLiHeight;
+  }
+  > li > div > label,
+  > li > div > i{
+    cursor: pointer;
+  }
+}
+
+.listItem {
+  width: 100%;
+  height: 100%;
+  float: right;
+  cursor: pointer;
+  text-indent: $listLiIndent;
+  &:hover {
+    width: 98%;
+    font-weight: bold;
+  }
+}
+
+.list-group-item {
+  padding: $listLiPadding;
+  height: $listLiHeight;
+  line-height: $listLiHeight;
+  text-indent: $listLiIndent;
+}
+
+#createContents {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: $createContentsBG;
+  z-index: $zindex;
+  top: $createTop;
+  > form {
+    width: $createFormWidth;
+    height: $createFormHeight;
+    border: $pointBorder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: $createFormTop;
+    margin-left: $createFormLeft;
+    background-color: $createFormBG;
+    border-radius: $createFormradus;
+    > p {
+      margin-top: $createFormPMargin;
+      margin-left: $createFormPMargin;
+      margin-right: $createFormPMargin;
+    }
+  }
+}
+
+.formItemHeight {
+  height: $formItemHeight;
+}
+
+#createContents > form > p > {
+  label {
+    width: 100%;
+  }
+  select {
+    width: 13%;
+    float: left;
+    margin-right: $createFormSelectRight;
+  }
+}
+
+#sideTitle {
+  width: 72%;
+}
+
+#selectDay {
+  width: 100%;
+}
+
+#createContents > form > p > textarea {
+  width: 100%;
+  height: $createFormTextAreaHeight;
+  resize: none;
+}
+
+#inputForm > button {
+  width: 46%;
+  margin-left: $createFormBtnLeft;
+  margin-top: $createFormBtnTop;
+}
+
+.contentBtn {
+  width: 50%;
+}
+#contentBtn{
+  height: $contentBtnHeight;
+  width: 100%;
+  margin: $contentBtnMargin;
+  >button{
+    float: left;
+    width: 45%;
+  }
+}
+
+#fileReader {
+  height: $fileReaderHeight;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 95%;
+  margin-left: $fileReaderLeft;
+}
+
+.previewWrap {
+  width: $previewWrapWidth;
+  height: $previewWrapHeight;
+  margin: $previewWrapMargin;
+  float: left;
+}
+
+.preview {
+  width: $previewWrapWidth;
+  height: $previewWrapHeight;
+  margin: $previewWrapMargin;
+  float: left;
+  position: absolute;
+  cursor: pointer;
+}
+
+.textStyle {
+  line-height: $previewWrapHeight;
+  text-align: center;
+  font-size: $textStyleFontSize;
+}
+
+.img {
+  z-index: $imgZindex;
+  cursor: pointer;
+}
+
+.file {
+  filter: $fileFilter;
+  opacity: $fileOpacity;
+  -moz-opacity: $fileMozOpa;
+  z-index: $fileZindex;
+  cursor: pointer;
+}
+
+#controlCompany, #topicManager {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: $toolFieldBG;
+  z-index: $toolFieldZindex;
+  top: $toolFieldTop;
+}
+
+
+.topMenuBtn{
+  width: $topMenuBtnWidth;
+  margin: $topMenuBtnMargin;
+  float: left;
+  font-weight: bold;
+}
+
+#addBtnArea {
+  height:  $addBtnAreaHeight;
+  display: none;
+}
+#searchArea{
+  height: $searchAreaHeight;
+  display: none;
+  >input{
+    margin-top: $createBtnTop;
+    width: 90%;
+    margin-left: $sideItemLeft;
+  }
+}
+
+
+.hiddenDiv {
+  display: none;
+}
+
+
+.controlWrap {
+  height: 100%;
+  width: 100%;
+}
+
+.controlWrap2 {
+  width: $controlWrap3Width;
+  height: $controlWrap3Height;
+  border: $pointBorder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: $controlWrap3Top;
+  margin-left: $controlWrap3Left;
+  background-color: $controlWrap3BG;
+}
+
+.company_list_area {
+  width: 20%;
+  height: 100%;
+  float: left;
+  > {
+    .company_list_header {
+      height: $companyHeaderHeight;
+      line-height: $companyHeaderHeight;
+      text-indent: $companyHeaderIndent;
+      font-weight: bold;
+      font-size: $companyHeaderSize;
+    }
+    .company_list {
+      height: $companyListHeight;
+    }
+    .company_addBtn {
+      height: $companyBtnHeight;
+      > input {
+        margin: $marginZero;
+        height: 95%;
+        width: 95%;
+      }
+    }
+  }
+}
+
+
+#contents_area{
+  overflow: auto;
+  width: 82%;
+  height: 100%;
+  float: left;
+  display: none;
+}
+
+
+
+
+.infoWrap{
+  width: 60%;
+  margin: $infoWrapMargin;
+  padding: $infoWrapPadding;
+  border-radius: $infoWrapBorderRdius;
+  border: $borderColor;
+  background-color: white;
+  > p {
+    margin-bottom: $infoWrapInnerPMBottom;
+  }
+  >p:last-child{
+    margin-top: $infoWrapInnerPMTop;
+  }
+  > h3 {
+    text-indent: $infoWrapH3Indent;
+    margin-bottom: $infoWrapMBottom;
+  }
+  > p > button,
+  > p > input,
+  > div > div > p > button,
+  > div > div > p > input[type="button"]{
+    margin-top: $infoWrapInnerBtnTop;
+  }
+}
+
+.p_text-Indent {
+  text-indent: $pTextIndent;
+}
+
+
+.label_textForm {
+  float: left;
+  width: $labelWidth;
+  margin-right: $labelMarginRight;
+  line-height: $textFormlabelHeight;
+}
+
+.chkWrapDiv{
+  width: 100%;
+  height: $chkWrapDivHeight;
+  line-height: $chkWrapDivHeight;
+  >input[type="radio"]:first-child{
+    margin-left: $chkWrapMLeftFirst;
+  }
+  >input[type="radio"]{
+    margin-left: $chkWrapMLeft;
+  }
+}
+
+#company_close {
+  width: 70%;
+  height: $companyCloseHeight;
+  margin-left: 30%;
+  > button {
+    float: right;
+    margin-right: $companyCloseBtnMargin;
+    margin-top: $companyCloseBtnMargin;
+  }
+}
+
+.company_input_state {
+  width: 50%;
+  margin-left: $companyInputStateLeft;
+}
+
+#mng_category {
+  margin-top: $mngMarginTop;
+}
+
+
+
+#mng_company  p > textarea{
+  margin-left: $mngElementRight;
+  width: 95%;
+  height: $mngTextAreaHeight;
+}
+.company_productItem:last-child{
+  border-bottom: $productListBorderBottom;
+}
+
+
+.company_productItem{
+  width: 100%;
+  height: $chkListItemHeight;
+  border-bottom: $chkListItemBorderBottom;
+  > div{
+    cursor: pointer;
+    text-indent: $chkListItemInnerDivIndent;
+    height: 100%;
+    width: 100%;
+    line-height: $chkListItemHeight;
+    float: left;
+    position: relative;
+    z-index: 3;
+  }
+  > input{
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    left: 95%;
+    top: $chkListItemInnerInputTop;
+  line-height: $chkListItemHeight;
+  }
+}
+
+
+
+#company_booklist{
+  margin-left: $mngElementRight;
+  width: 90%;
+  height: $companyBookListHeight;
+  border: $companyBookListBorder;
+  border-radius: $companyBookListRadius;
+  overflow: auto;
+}
+
+.halfDiv{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#mng_company,
+#mng_product {
+  height: 100%;
+  overflow: auto;
+  p > {
+    select, input {
+      margin-left: $mngElementRight;
+      width: $mngElementWidth;
+    }
+  }
+}
+
+
+// 채팅
+#chattingWrap {
+  width: 90%;
+  min-height: $chattingWrapMinHeight;
+  height: 95%;
+  margin-left: $sideItemLeft;
+  margin-top: $contentsTop;
+}
+
+#chat-title {
+  width: 100%;
+  height: $chatHeight;
+  font-size: $chatTitleSize;
+  font-weight: bold;
+  text-indent: $chatIndent;
+  line-height: $chatHeight;
+  > button {
+    float: right;
+    margin-right: $chatBtnMargin;
+    margin-top: $chatBtnMargin;
+  }
+}
+
+
+#chat-contents {
+  width: 100%;
+  height: $chatContentsHeight;
+}
+
+
+#chat-area {
+  width: 96%;
+  background-color: #BBDEFB;
+  margin-left: $chatAreaLeft;
+  height: 100%;
+  resize: none;
+  overflow: auto;
+
+}
+
+#chat-input {
+  width: 100%;
+  height: $chatInputHeight;
+  margin-top: $charInputMarginTop;
+}
+
+#chat-text {
+  width: 79%;
+  height: $chatInputHeight;
+  float: left;
+  margin-left: $chatAreaLeft;
+  margin-right: 2%;
+}
+
+#chat-upload {
+  width: 15%;
+  height: $chatInputHeight;
+  padding: $chatUploadPadding;
+}
+
+.chat_user_name {
+  // float: left;
+  font-weight: bold;
+  font-size: $chatUserNameFontSize;
+}
+// .chat_user_text {}
+//
+.chat_value {
+margin: $chatValueMarginPadding;
+padding: $chatValueMarginPadding;
+}
+
+.chat_contents{
+  max-width: $chatContentsMaxWidth;
+  background-color: white;
+  border-radius: $chatContentsRadius;
+  height: $chatContentsHeight;
+  text-indent: $chatContentsIndent;
+  padding: $chatContentsPadding;
+}
+
+
+.chat_dayLine{
+  // text-align: center;
+  width: 100%;
+  margin: $chatDayLineMargin;
+  height: $chatDayLineHeight;
+}
+
+.dayValue{
+  text-align: center;
+  width: 54%;
+  min-width: $chatDayValueMinWidth;
+  float: left;
+  height: $chatDayLineHeight;
+}
+.dayLine{
+  width:23%;
+  float: left;
+  border-bottom: $chatDayInnerLineBprder;
+  height: 50%;
+}
+
+
+
+.companyWrap {
+  width: $companyWrapWidth;;
+  height: $companyWrapHeight;
+  border: $pointBorder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: $companyWrapMarginTop;
+  margin-left: $companyWrapMarginLeft;
+  background-color: $companyWrapBG;
+}
+
+#topicManagerTitle {
+  width: 100%;
+  height: 10%;
+  text-indent: $topicManagerIndent;
+  line-height: $topicManagerHeight;
+  font-weight: bold;
+  font-size: $topicManagerFontSize;
+  border-radius: $topicManagerRadius;
+}
+
+#topicManagerContents {
+  width: 100%;
+  height: 95%;
+}
+
+#topicMember, #topicNonMember {
+  width: 80%;
+  height: 40%;
+  float: left;
+  margin: $topicMemberMargin;
+}
+
+#downBtn, #upBtn {
+  width: 15%;
+  height: 40%;
+}
+
+#topicManagerContents > div {
+  padding-left: 3%;
+  height: 10%;
+  width: 100%;
+  > button {
+    height: 100%;
+    width: 48%;
+    margin-left: $topicMemberMargin;
+    margin-top: $topicManagerBtnMargin;
+  }
+}
+#company-selectImg,
+#company-img{
+  margin-left: $productImgLeft;
+}
+#product-img-view > a > img {
+  width: $productImgWidth;
+  height: $productImgHeight;
+}

@@ -1,0 +1,83 @@
+
+
+@media screen and (max-width: 375px) {
+
+$topbarHeight: 60px;
+$companyNameIndent: 6px;
+$companyNameFontSize: 20px;
+
+$btnHeight: 40px;
+$btnMargin: 10px 6px 10px 0px;
+
+$bottomPaddingTop: 60px;
+$footerHeight: 20px;
+$footerLabelFontSize: 3px;
+
+  #topBar{
+    width: 100%;
+    position: fixed;
+    height: $topbarHeight;
+    line-height: $topbarHeight;
+    background-color: $topBarBackGround;
+  }
+
+  #sideHeader {
+    width: 40%;
+    height: 100%;
+    float: left;
+  }
+
+
+  #company_name {
+    text-indent: $companyNameIndent;
+    width: 100%;
+    font-size: $companyNameFontSize;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+    #select,
+    #search,
+    #previous,
+  #prevBtn,
+  #explorer {
+    text-align: center;
+    height: $btnHeight;
+    line-height: $btnHeight;
+    font-weight: bold;
+    width: 45%;
+    margin: $btnMargin;
+    float: right;
+    background-color: $topBarButtonColor;
+    cursor: pointer;
+  }
+
+  #itemBar {
+    width: 60%;
+    height: 100%;
+    float: left;
+  }
+
+
+#bottomContentsCategory,
+  #bottomContents {
+    // height: calc(100% - 60px);
+    padding-top: $bottomPaddingTop;
+    width: 100%;
+  }
+
+  #footer{
+    width: 100%;
+    height: $footerHeight;
+    background-color: $topBarBackGround;
+  }
+
+  #sideFooter {
+    height: $footerHeight;
+    text-align: center;
+    > label {
+      color: $fontColorWhite;
+      font-size: $footerLabelFontSize;
+    }
+  }
+}

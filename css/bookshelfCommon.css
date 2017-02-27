@@ -1,0 +1,145 @@
+@media screen and (max-width: 375px) {
+  #topBar {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    line-height: 60px;
+    background-color: #2f4050; }
+
+  #sideHeader {
+    width: 40%;
+    height: 100%;
+    float: left; }
+
+  #company_name {
+    text-indent: 6px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer; }
+
+  #select,
+  #search,
+  #previous,
+  #prevBtn,
+  #explorer {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    width: 45%;
+    margin: 10px 6px 10px 0px;
+    float: right;
+    background-color: #1ab394;
+    cursor: pointer; }
+
+  #itemBar {
+    width: 60%;
+    height: 100%;
+    float: left; }
+
+  #bottomContentsCategory,
+  #bottomContents {
+    padding-top: 60px;
+    width: 100%; }
+
+  #footer {
+    width: 100%;
+    height: 20px;
+    background-color: #2f4050; }
+
+  #sideFooter {
+    height: 20px;
+    text-align: center; }
+    #sideFooter > label {
+      color: white;
+      font-size: 3px; } }
+html, body {
+  margin: 0px; }
+
+#company_name, #itemBar {
+  background-color: #2f4050;
+  color: white; }
+
+#wrap {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f4; }
+
+.buttonPositive {
+  background-color: #1ab394;
+  color: white; }
+  .buttonPositive:hover {
+    background-color: #17a387;
+    color: white; }
+
+.buttonDanger {
+  background-color: #FF1744;
+  color: white; }
+  .buttonDanger:hover {
+    background-color: #D50000;
+    color: white; }
+
+.buttonNeutrality {
+  background-color: #E0E0E0;
+  color: black; }
+  .buttonNeutrality:hover {
+    background-color: #BDBDBD;
+    color: black; }
+
+@media screen and (min-width: 376px) {
+  #imageList {
+    width: 75%;
+    height: 100%;
+    float: left; }
+
+  #sideHeader {
+    width: 25%;
+    height: 50px;
+    float: left; }
+
+  #company_name {
+    text-indent: 20px;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer; }
+
+  #prevBtn,
+  #explorer {
+    width: 150px;
+    height: 40px;
+    background-color: #1ab394;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    text-indent: 20px;
+    float: right;
+    margin-left: 5px; }
+
+  #itemBar {
+    width: 75%;
+    height: 50px;
+    margin-left: 25%;
+    padding: 5px; }
+
+  #bottomContents {
+    width: 70%;
+    min-width: 1300px;
+    height: calc(100% - 75px);
+    margin: 0 auto; }
+
+  #footer {
+    height: 25px;
+    width: 100%;
+    background-color: #2f4050; }
+
+  #sideFooter {
+    text-align: center; }
+    #sideFooter > label {
+      color: white; } }
+
+/*# sourceMappingURL=bookshelfCommon.css.map */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>topics</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+    <script src="js/init.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/topics.js"></script>
+  </head>
+  <body>
+
+    <div id="topMenu" >
+      <div class="user-container1 containerStyle">
+        <div class="page_title">
+          <div class="returnMain">홈</div>
+          <div>/</div>
+          <div>기획 관리</div>
+        </div>
+      </div>
+      <div class="user-container2 containerStyle">
+      </div>
+      <div class="user-container3 containerStyle">
+        <div id="accountInfo">
+          <div id="user_name" ></div>
+          <button id="sign-out"  class="btn btn-default buttonNeutrality">로그아웃</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottomWrap">
+
+      <div id="sidebar" class="divContents" >
+        <div class="company_addBtn">
+          <input type="button" id = "addTopic" class="newItem btn btn-default buttonPositive" value="기획 추가"/>
+        </div>
+        <div id="sidebar_list_area">
+        </div>
+      </div>
+
+      <div id="contents_area">
+        <div class="infoWrap">
+          <h3 id="targetName"></h3>
+          <hr />
+          <p class="p_text-Indent">
+            <label class="label_textForm">기획명</label>
+            <input type="text" id="topic-name" class="form-control company_input_state" value="">
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">출판사</label>
+            <input readonly id="topic-company-name" class="form-control company_input_state" name="topic-company" />
+            <div hidden id="topic-company"  name="topic-company"></div>
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">상 태 </label>
+            <div class="chkWrapDiv">
+              <input type="radio" id ="topic-state-0" name="topic_chk" value="0">준 비
+              <input type="radio" id ="topic-state-1" name="topic_chk" value="1">진행 중
+              <input type="radio" id ="topic-state-2" name="topic_chk" value="2">교정 완료
+              <input type="radio" id ="topic-state-3" name="topic_chk" value="3">제작 중
+              <input type="radio" id ="topic-state-4" name="topic_chk" value="4">인쇄 중
+              <input type="radio" id ="topic-state-5" name="topic_chk" value="5">배포 완료
+            </div>
+          </p>
+          <p  class="topic_key p_text-Indent">
+            <input type="button" class="addTopic btn btn-default buttonPositive" value="등 록"/>
+            <input type="button" class="updateTopic btn btn-default buttonNeutrality" value="수 정"/>
+            <input type="button" class="deleteTopic btn btn-default buttonDanger" value="삭 제"/>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

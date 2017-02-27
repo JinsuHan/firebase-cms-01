@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>firebase example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+
+
+<!-- datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- 로딩화면 스피너 -->
+<script defer src="js/spin.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+  <script src="https://use.fontawesome.com/da4cd0db40.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="
+//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/locale-all.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fullcalendar.css">
+
+  <!-- text-editer -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/lang/summernote-ko-KR.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+
+    <div hidden><input type="button" hidden id="sign-in"  /></div>
+
+
+    <!-- 참여작가 설정 -->
+    <div id="topicManager">
+      <div class="controlWrap2">
+        <div id="topicManagerTitle"></div>
+        <div id="topicManagerContents">
+          <select name="member" size="10" id="topicMember" class="form-control"></select>
+          <button id="downBtn" class="btn btn-default buttonNeutrality">해 제</button>
+
+          <select name="nonMenber" size="10" id="topicNonMember" class="form-control"></select>
+          <button id="upBtn" class="btn btn-default buttonPositive">추 가</button>
+
+          <div>
+            <button id="topicSetUp" class="btn btn-default buttonPositive">확 인</button>
+            <button class="closeBtn btn btn-default buttonNeutrality" >닫 기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="topMenu" >
+      <div class="user-container1 containerStyle">
+        <div class="page_title">
+          <div>홈</div>
+          <button class="system btn btn-default buttonNeutrality">시스템</button>
+        </div>
+        <!-- 구글 로그인 -->
+        <div hidden id="user-name" style="float: left;" ></div>
+        <div hidden id="user-id" ></div>
+        <div hidden id="user_permission" ></div>
+      </div>
+
+      <div class="user-container2 containerStyle">
+        <div id="topMenu-topic">
+          <select id="topic-list" class="form-control"></select>
+          <div id="topic-state"></div>
+          <div id="topic-entry"></div>
+        </div>
+      </div>
+
+      <div class="user-container3 containerStyle">
+        <div id="accountInfo">
+          <div id="user_name" ></div>
+          <button id="sign-out"  class="btn btn-default buttonNeutrality">로그아웃</button>
+        </div>
+        <button class="openList btn btn-default buttonNeutrality">홈페이지</button>
+        <button class="manage btn btn-default buttonNeutrality">도 서</button>
+        <button class="control-user btn btn-default buttonNeutrality">사용자</button>
+        <button class="topic btn btn-default buttonNeutrality">기 획</button>
+        <button class="control-company btn btn-default buttonNeutrality">출판사</button>
+        <button hidden id="openTopicManager" class="btn btn-default buttonPositive">작가 설정</button>
+      </div>
+    </div>
+
+    <div id="bottomWrap">
+
+      <div id="sidebar" class="divContents" >
+        <div class="sidebarDiv01">
+
+            <div id="chattingWrap" >
+              <div id="chat-title">채 팅
+                <button id="toggleBtn" class="btn btn-default buttonNeutrality" >닫기</button>
+              </div>
+              <div id="chat-contents">
+                <div id="chat-area" class="form-control"></div>
+              </div>
+              <div id="chat-input">
+                <input type="text" id="chat-text"  class="form-control" />
+                <input type="button" id="chat-upload"  class="form-control buttonPositive" value="전송"/>
+              </div>
+            </div>
+
+        </div>
+        <div class="sidebarDiv02">
+          <div id = "sideBtn">
+            <button hidden class="create btn btn-default buttonPositive" >새 글</button>
+          </div>
+          <div id="list" class="list-group">
+          </div>
+        </div>
+      </div>
+
+      <div id="calendar" >
+        <div></div>
+      </div>
+
+      <div id="mainContents" >
+        <div id = "contentWrap">
+
+          <div id = "contents" hidden>
+            <p>
+              <label>제 목</label>
+              <input type="text" id="title_main" class="title_main form-control" value="" />
+            </p>
+            <p>
+              <label>내 용</label>
+              <textarea id="contents_main" class="contents_main form-control" value="" ></textarea>
+            </p>
+            <p>
+              <label>날 짜</label>
+              <input type="text" id="date_main" class="date_main form-control" value="" />
+              <!-- <input type="date" id="date_main" class="date_main form-control" value="" /> -->
+            </p>
+            <p>
+              <label>작성자</label>
+              <input type="text" id="writer_main" class="writer_main form-control" value="" readonly />
+            </p>
+            <p id="contentBtn" hidden>
+              <button class="edit btn btn-default buttonNeutrality">수 정</button>
+              <button class="delete btn btn-default buttonDanger">삭 제</button>
+            </p>
+          </div>
+
+          <input type="hidden" id="id_main" class="id_main" value="" />
+          <input type="hidden" id="email_main" class="id_main" value="" />
+          <input type="hidden" id="imgUrl_main" class="id_main" value="" />
+          <input type="hidden" id="attr_main" class="id_main" value="" />
+          <input type="hidden" id="target_main" class="id_main" value="" />
+
+          <p>
+            <div id="imgView" hidden ></div>
+          </p>
+
+          <div hidden class="reply-area">
+            <div id="reply-input">
+              <input type="text" class="input-reply form-control"/>
+              <input type="button" class="insert-reply btn btn-default buttonPositive" value="댓글 등록"/>
+            </div>
+            <div id="reply-view"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 새글 -->
+    <div id="createContents">
+      <form id="inputForm" class="sidediv01">
+        <p>
+          <label>제 목 </label>
+          <select id="post-attr" name="post-attr" class="form-control formItemHeight">
+          </select>
+          <select id="post-target" name="post-target" class="form-control formItemHeight">
+          </select>
+          <input type="text" id="sideTitle" class="form-control formItemHeight" value="">
+          <input type="hidden" id="post-topic" />
+        </p>
+        <p>
+          <label>내 용 </label>
+          <div id="sideContents"></div>
+          <!-- <textarea id="sideContents" class="form-control formItemHeight"></textarea> -->
+        </p>
+        <p>
+          <label>날 짜 </label>
+          <input type="text" name="selectDay" id="selectDay" class="form-control formItemHeight">
+          <!-- <input type="date" name="selectDay" id="selectDay" class="form-control formItemHeight"> -->
+        </p>
+        <div id = "fileReader"></div>
+        <input type="hidden" id="crud_hiddenId" />
+        <button type="submit" class="btn btn-default contentBtn buttonPositive">등 록</button>
+        <button id= "closeForm" class="btn btn-default contentBtn buttonNeutrality">닫 기</button>
+      </form>
+    </div>
+
+
+    <!-- 출판사
+    selectTopic = $("#topic-list option:selected").val(); 관리, 직원 관리 -->
+    <div id="controlCompany">
+      <div class="companyWrap">
+        <div class="company_list_area">
+          <div class="company_list_header">
+          </div>
+          <div class="company_list ">
+          </div>
+          <div class="company_addBtn">
+            <input type="button" class="newItem btn btn-default" />
+          </div>
+        </div>
+
+        <div id = "company_close">
+          <button class="closeBtn btn btn-default buttonNeutrality">닫 기</button>
+        </div>
+
+        <div id = "company_contents">
+          <p class="p_text-Indent">
+            <label class="label_textForm">출판사</label>
+            <input type="text" id="company-name" class="form-control company_input_state" value="">
+          </p>
+          <p class="p_text-Indent">
+            <label class="label_textForm">활성화</label>
+            <div class="chkWrapDiv">
+              <input type="radio" id ="company_active" name="company_chk" value="true">활성화
+              <input type="radio" id ="company_disable" name="company_chk" value="false">비활성화
+            </div>
+          </p>
+          <p class="company_key p_text-Indent">
+            <input type="button" class="addCompany btn btn-default buttonPositive" value="등 록"/>
+            <input type="button" class="updateCompany btn btn-default buttonNeutrality" value="수 정"/>
+            <input type="button" class="deleteCompany btn btn-default buttonDanger" value="삭 제"/>
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+      <script src="js/init.js"></script>
+
+    <script src="js/firebaseAuth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/onEvent.js"></script>
+    <script src="js/account.js"></script>
+    <script src="js/awsFileUpload.js"></script>
+
+
+  </body>
+</html>

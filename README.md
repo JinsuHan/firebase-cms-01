@@ -33,17 +33,15 @@ firebase init 로 기본 설정 (프로젝트 폴더, db, hosting 사용 여부)
 <pre>
 프로젝트 페이지 > overview > 웹 앱에 firebase 추가하기 > 스니펫 획득
 <code>
-    <script>
-      var config = {
-        apiKey: "your key",
-        authDomain: "your-domain.firebaseapp.com",
-        databaseURL: "https://your-domain.firebaseio.com",
-        storageBucket: "your-domain.appspot.com",
-        messagingSenderId: "0000000"
-      };
-    </script>
-    </code>
-	형태이며 js/init.js 에 삽입
+var config = {
+ apiKey: "your key",
+ authDomain: "your-domain.firebaseapp.com",
+ databaseURL: "https://your-domain.firebaseio.com",
+ storageBucket: "your-domain.appspot.com",
+  messagingSenderId: "0000000"
+};
+</code>
+형태이며 js/init.js 에 삽입
 </pre>
 
 ###5) 배포
@@ -53,34 +51,25 @@ firebase use *name* 으로 프로젝트 선택이 가능
 firebase init 에서 설정한 경로에 파일을 넣고 firebase deploy 명령을 사용
 </pre>
 
-
-
-
-
-
-
 ###6) 시작하기
 <pre>
 시스템관리자 계정 - 권한 (2)
-    	 cms 를 업로드 한 후 처음 접속하면 systemmanager 계정을 
-   	  자동으로 생성한다 id : system@manager.com / pw : 123456 을 
-  	   기본으로 생성하며 생성 전 firebaseAuth.js 파일에서 수정이 가능하다.
-   	  systemmanager는 출판사 추가/삭제의 권한만 가진다.
+    	 cms 를 업로드 한 후 처음 접속하면 systemmanager 계정을 자동으로 생성한다 
+	 default = id : system@manager.com / pw : 123456 
+  	 기본으로 생성하며 생성 전 firebaseAuth.js 파일에서 수정이 가능하다.
+   	 systemmanager는 출판사 추가/삭제의 권한만 가진다.
 
 사용자 계정 - 시스템관리자 계정에서 회사를 추가한 후 그 회사를 선택하여
-  	   가입 하는 경우 권한(0)의 사용자 계정이 되며, 관리자 계정에서 정해주는 주제
-    	 만 사용할 수 있으며 글을 수정, 삭제, 채팅 을 할 수 있다.
+  	 가입 하는 경우 권한(0)의 사용자 계정이 되며,
+	 관리자 계정에서 정해주는 주제만 사용할 수 있으며 글을 수정, 삭제, 채팅 을 할 수 있다.
 
-관리자 계정 - 권한 변경등의 기능을 사용하기 위해 필요한 관리자 계정으로
-    	 권한(1)을 가진다.
-    	 자동으로 생성되지 않으므로 현재 사용자 계정으로 가입한 뒤 
-   	  db 상에서 수동으로 권한을 부여해 줘야 한다.
+관리자 계정 - 권한 변경등의 기능을 사용하기 위해 필요한 관리자 계정으로 권한(1)을 가진다.
+    	 자동으로 생성되지 않으므로 현재 사용자 계정으로 가입한 뒤 db 상에서 수동으로 권한을 부여해 줘야 한다.
 
-그외
-    	 id,pw,uid 는 firebase의 auth 기능을 사용하며
-   	  id는 e메일 형식을 맞춰야 하며, pw는 6자 이상만 가능하다.
-   	  비밀번호 변경등의 기능은 firebase의 비밀 번호 변경 기능을 이용해 제작해야 한다.
-    	 그외 정보들은 database 에 uid 를 기준으로 저장된다.
+그외 -   id,pw,uid 는 firebase의 auth 기능을 사용하며
+   	 id는 e메일 형식을 맞춰야 하, pw는 6자 이상만 가능하다.
+   	 비밀번호 변경등의 기능은 firebase의 비밀 번호 변경 기능을 이용해 제작해야 한다.
+    	 데이터는 database 에 uid 를 기준으로 저장된다.
 </pre>
 
 ###7) 파일 업로드
@@ -88,5 +77,6 @@ firebase init 에서 설정한 경로에 파일을 넣고 firebase deploy 명령
 firebase 의 db 상에는 파일의 이름만 올라가고 파일 자체는 awsS3 에 올라간다.
 js/init.js 파일에 입력한다.
 AWS.config.update() > accessKeyId, secretAccessKey 
-   	new AWS.S3() > bucket 이름,  region 을 설정해 줘야 한다.
+new AWS.S3() > bucket,  region
+해당 key값의 입력이 필요하다.
 </pre>

@@ -15,12 +15,12 @@
 >{  "rules": { ".read": true, ".write": true }}
 
 ###3) hosting 
-firebase console 도구 설치
+<pre>firebase console 도구 설치
 	$ npm install -g firebase-tools
 터미널 에서 firebase login 으로 로그인
 firebase init 로 기본 설정 (프로젝트 폴더, db, hosting 사용 여부)
 추가 서버 없이 파일을 실행하여도 테스트가 가능
-터미널에서 firebase serve 로 로컬서버 사용 가능, 경로는 init 명령에서 선택한 폴더
+터미널에서 firebase serve 로 로컬서버 사용 가능, 경로는 init 명령에서 선택한 폴더<code></code></pre>
 
 ###4) firebase 적용
 프로젝트 페이지 > overview > 웹 앱에 firebase 추가하기 > 스니펫 획득

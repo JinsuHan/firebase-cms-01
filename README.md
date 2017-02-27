@@ -6,8 +6,8 @@
 ##적용 순서
 
 ###1) 구글 firebase 프로젝트 생성
-https://firebase.google.com/
-프로젝트명은 4자 이상 중복 불가
+*https://firebase.google.com/
+*프로젝트명은 4자 이상 중복 불가
 
 ###2) 기본
 이메일/비밀번호, google 가입 가능 설정

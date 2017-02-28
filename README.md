@@ -3,7 +3,7 @@
 ##CMS firebase 적용 방법
 
 ##예제 사이트
->https://sample-db4f6.firebaseapp.com/
+>https://sample-db4f6.firebaseapp.com/main.html
 
 ##적용 순서
 
